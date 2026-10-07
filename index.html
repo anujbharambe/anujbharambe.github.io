@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anuj Bharambe</title>
+<meta name="description" content="Anuj Bharambe works on generative AI systems and research on making them reliable.">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: "Lato", Verdana, Helvetica, sans-serif; font-size: 15px; line-height: 1.6; color: #222; background: #fff; margin: 0; }
+  .page { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+  a { color: #1772d0; text-decoration: none; }
+  a:hover { color: #f09228; }
+  :focus-visible { outline: 2px solid #f09228; outline-offset: 2px; }
+
+  .intro { display: flex; gap: 2rem; align-items: center; }
+  .intro-text { flex: 1; }
+  .name { font-size: 32px; text-align: center; margin: 0 0 0.25rem; font-weight: 400; }
+  .email { text-align: center; color: #555; margin: 0 0 1rem; }
+  .links { text-align: center; margin-top: 1rem; }
+  .photo { width: 210px; height: 210px; border-radius: 50%; flex-shrink: 0; object-fit: cover; background: #dfe4ea; }
+
+  h2 { font-size: 22px; font-weight: 400; margin: 2.5rem 0 0.75rem; }
+  .lead { color: #444; margin: 0 0 1rem; }
+
+  .project { display: flex; gap: 1.5rem; padding: 1rem 0.75rem; border-radius: 6px; }
+  .project.highlight { background: #fff8e6; }
+  .thumb { width: 160px; height: 120px; flex-shrink: 0; border-radius: 4px; background: #e9edf2; object-fit: cover;
+           display: flex; align-items: center; justify-content: center; color: #8a94a3; font-size: 13px; text-align: center; padding: 0.5rem; box-sizing: border-box; }
+  video.thumb { display: block; padding: 0; }
+  .project-title { font-size: 16px; font-weight: 700; }
+  .meta { margin: 0.2rem 0; }
+  .venue { font-style: italic; }
+  .project p { margin: 0.5rem 0 0; }
+
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  footer { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; font-size: 13px; color: #888; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; }
+  footer .phone { white-space: nowrap; }
+
+  @media (max-width: 640px) {
+    .intro { flex-direction: column-reverse; }
+    .photo { width: 160px; height: 160px; }
+    .project { flex-direction: column; gap: 0.75rem; }
+    .thumb { width: 100%; height: 160px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <section class="intro">
+    <div class="intro-text">
+      <h1 class="name">Anuj Bharambe</h1>
+      <p>I am a Gen AI Associate in the Commercial Technology &amp; Innovation Office at PwC US, where I lead a firm-wide robotics research initiative. I conduct research in robotics and machine learning. My work focuses on vision-language-action models, reinforcement learning, and agentic systems.</p>
+      <p>I graduated from BITS Pilani with a B.E. in Computer Science and a minor in Finance.</p>
+      <p class="links">
+        <a href="mailto:anujnitinb@gmail.com">Email</a> &nbsp;/&nbsp;
+        <a href="#">GitHub</a> &nbsp;/&nbsp;
+        <a href="#">LinkedIn</a>
+      </p>
+    </div>
+    <!-- Replace with: <img class="photo" src="images/anuj.jpg" alt="Photo of Anuj Bharambe"> -->
+    <div class="photo" role="img" aria-label="Profile photo placeholder"></div>
+  </section>
+
+  <h2>Current research</h2>
+
+  <article class="project">
+    <video class="thumb" src="images/vla_rl.mp4" autoplay muted loop playsinline aria-label="Short demo clip"></video>
+    <div>
+      <span class="project-title">Disentangling Capability, Reliability, and Mechanism in VLA Reinforcement Learning</span>
+      <div class="meta"><!-- EDIT: collaborators, or delete this line --></div>
+      <div class="venue">In progress, 2026</div>
+      <p>Reinforcement learning improves vision-language-action models, but it is unclear whether it teaches robots new skills, unlocks skills they could already perform occasionally, or simply makes existing skills more reliable. We compare each RL-trained model with the imitation-trained model it started from, giving both many attempts from identical start states on standard tests of visual, semantic, and execution generalization, with controls that separate the effect of reward from extra training. We then identify which internal changes cause the improvement by transplanting them into the starting model or removing them, across multiple VLAs, benchmarks, and a real robot.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <video class="thumb" src="images/safety_benchmark.mp4" autoplay muted loop playsinline aria-label="Short demo clip"></video>
+    <div>
+      <span class="project-title">A Safety Benchmark for Robotic-Arm VLA Models</span>
+      <div class="meta"><!-- EDIT: collaborators, or delete this line --></div>
+      <div class="venue">In progress, 2026</div>
+      <p>Building on our work on automated safety evaluation, we are developing a safety benchmark for vision-language-action models that control robotic arms, so different models can be tested and compared on how safely they act, not just whether they finish the task.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <video class="thumb" src="images/agent_monitoring.mp4" autoplay muted loop playsinline aria-label="Short demo clip"></video>
+    <div>
+      <span class="project-title">Real-Time Monitoring and Correction of LLM Agents</span>
+      <div class="meta"><!-- EDIT: collaborators, if cleared to name them --></div>
+      <div class="venue">In progress, 2026</div>
+      <p>LLM agents working on long, multi-step tasks can gradually drift from what the user asked for while appearing to work correctly at every step. We are building a lightweight monitoring layer that detects this drift as it happens and corrects the agent before small errors compound.</p>
+    </div>
+  </article>
+
+  <h2>Past Research</h2>
+
+  <!-- Deliberately generic title and description: no method details until the review and patent process allow it. -->
+  <article class="project highlight">
+    <video class="thumb" src="images/safety_eval.mp4" autoplay muted loop playsinline aria-label="Short demo clip"></video>
+    <div>
+      <span class="project-title">Physical Safety Evaluation of Robot Foundation Models</span>
+      <div class="meta"><strong>Anuj Bharambe</strong>, <!-- EDIT: co-authors, if the review policy allows naming them --> et al.</div>
+      <div class="venue">Under review at IEEE ICRA 2027 &nbsp;·&nbsp; US patent application filed</div>
+      <p>Robot foundation models, including vision-language-action (VLA) models, are usually judged by whether they complete a task, not by whether they do so safely. We develop an automated way to test the physical safety of these models and show that many task completions involve safety violations that success-only evaluation misses. Details will be shared after review.</p>
+    </div>
+  </article>
+
+
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>PwC US, Commercial Technology &amp; Innovation Office</strong>, Gen AI Associate (Jan 2026–present)</li>
+    <li><strong>IAM</strong> (IoT startup), Research Intern (May 2025–Jul 2025) <!-- EDIT: optional, one line on what you built or researched --></li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li><strong>BITS Pilani</strong>, B.E. Computer Science, Minor in Finance (graduated 2026) <!-- EDIT: add CGPA if strong, and thesis title --></li>
+  </ul>
+
+  <h2>Fun stuff</h2>
+  <p class="lead">Some random fun stuff :)</p>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=EqQl-JQxToE">Finally, a table tennis opponent with a worse serve than mine</a>: finally, someone who can beat me at table tennis.</li>
+    <li><a href="https://www.youtube.com/watch?v=6njB6LlvCvA">Robot kickboxing, or recovery behaviours under adversarial perturbation</a>: the first humanoid combat tournament.</li>
+    <li><a href="https://www.youtube.com/watch?v=M-vj3GwXPo0">The ball is out of distribution</a>: one of the robots got carried off on a stretcher, lol.</li>
+  </ul>
+
+  <footer>
+    <div class="emails">Email: <a href="mailto:anujnitinb@gmail.com">anujnitinb@gmail.com</a> &nbsp;/&nbsp; <a href="mailto:anuj.nitin.bharambe@pwc.com">anuj.nitin.bharambe@pwc.com</a> &nbsp;/&nbsp; <a href="mailto:f20220175p@alumni.bits-pilani.ac.in">f20220175p@alumni.bits-pilani.ac.in</a></div>
+    <div class="phone">Contact: <a href="tel:+918482911094">+91 84829 11094</a></div>
+  </footer>
+</main>
+</body>
+</html>
